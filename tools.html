@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Gold color */
+}
+
+/* Hero Section */
+.hero {
+    background: url('./images/tools\(1\).jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6em 2em;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    z-index: 2;
+}
+
+.hero .btn {
+    padding: 0.7em 1.5em;
+    background: #ffcc00; /* Gold color */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    z-index: 2;
+}
+
+.hero .btn:hover {
+    background: #e6b800; /* Darker gold */
+    transform: scale(1.05);
+}
+
+/* Tools Section */
+#tools {
+    padding: 4em 2em;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#tools h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: #1a1a1a;
+}
+
+.tool-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 0 2em;
+}
+
+.card {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+</style>
+<body>
+    <!-- Header Section -->
+   
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Ultimate Bike Tool Collection</h1>
+        <p>Everything you need to maintain and upgrade your bike.</p>
+        <a href="#tools" class="btn">Explore Tools</a>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools">
+        <h2>Popular Bike Tools</h2>
+        <div class="tool-cards">
+            <div class="card">
+                <img src="./images/slide-1 (1).jpg" alt="Bike Wrench">
+                <h3>Bike Wrench</h3>
+                <p>Essential for adjusting and tightening bolts.</p>
+            </div>
+            <div class="card">
+                <img src="./images/tools(2).jpeg"alt="Tire Levers">
+                <h3>Tire Levers</h3>
+                <p>Perfect for removing and installing tires.</p>
+            </div>
+            <div class="card">
+                <img src="./images/tools(3).jpeg" alt="Multi-Tool">
+                <h3>Multi-Tool</h3>
+                <p>A compact tool with multiple functions for bike repairs.</p>
+            </div>
+            <div class="card">
+                <img src="./images/tools(4).jpeg" alt="Multi-Tool">
+                <h3>All-Tool</h3>
+                <p>A compact tool with multiple functions for bike repairs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bike Tools. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikers Club - Content Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for biker theme */
+    color: #e0e0e0; /* Light text color for readability */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #d3afa4, #ff8c00); /* Gradient background */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for Main Content */
+.container {
+    display: flex; /* Flexbox for layout */
+    max-width: 1200px; /* Maximum width */
+    margin: 20px auto; /* Centering */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #1e1e1e; /* Dark sidebar background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    flex: 1; /* Allow sidebar to grow */
+    min-width: 250px; /* Minimum width */
+}
+
+.sidebar h2 {
+    color: #ff8c00; /* Sidebar heading color */
+    margin-bottom: 15px;
+}
+
+/* Sidebar List Styling */
+.sidebar ul {
+    list-style: none; /* Remove default list styling */
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.sidebar ul li a {
+    color: #ff8c00; /* Link color */
+    text-decoration: none;
+    display: flex; /* Flexbox for image and text */
+    align-items: center; /* Center vertically */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidebar ul li a:hover {
+    color: #fff; /* Change link color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.sidebar ul li img {
+    width: 50px; /* Fixed image size for links */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Main Section Styling */
+main {
+    background-color: #333; /* Main section background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    flex: 2; /* Allow main content to grow */
+    margin-left: 20px; /* Space between sidebar and main */
+}
+
+main h2 {
+    color: #ff8c00; /* Main heading color */
+    margin-bottom: 15px;
+}
+
+/* Figure Styling */
+main figure {
+    margin: 20px 0; /* Space around figure */
+}
+
+main figure img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth image hover effect */
+}
+
+main figure img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Styling */
+footer {
+    background: #444; /* Dark background */
+    color: #f0f0f0; /* Footer text color */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    main {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Adjust header font size */
+    }
+
+    .sidebar h2 {
+        font-size: 1.3rem; /* Adjust sidebar heading size */
+    }
+
+    main h2 {
+        font-size: 1.5rem; /* Adjust main heading size */
+    }
+}
+
+
+</style>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Bikers Club</h1>
+    </header>
+
+    <!-- Main Content Section with 2 Columns -->
+    <div class="container">
+        <!-- Left Sidebar with Image Links -->
+        <aside class="sidebar left-sidebar">
+            <h2>Related Tools</h2>
+            <ul>
+                <li>
+                    <a href="./yamaha.html">
+
+                        <img src="./images/png-1.jpeg" alt="bikers-guide" />
+                        Yamaha Bikes
+                    </a>
+                </li>
+                <li>
+                    <a href="./tools.html">
+                        <img src="./images/png-2.jpeg" alt="Article 2" />
+                        Bikes Tools
+                    </a>
+                </li>
+                <li>
+                    <a href="./bike product.html">
+                        <img src="./images/png-3.jpeg" alt="Article 3" />
+                        Bikes Products
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Section with Article -->
+        <main>
+            <article>
+                <h2>The Thrill of Riding</h2>
+                <figure>
+                    <img src="./images/wp5571332-yamaha-yzf-r15-v3-bs6-wallpapers.jpg" alt="Riding" />
+                    <figcaption> <i>Experience the thrill of the open road. </i></figcaption>
+                </figure>
+                <p>Riding a motorcycle is not just about transportation; it's an exhilarating experience that offers a unique sense of freedom and adventure. Whether you're a seasoned rider or a beginner, the road calls to you.</p>
+                <p>Join fellow enthusiasts as we explore the best routes, safety tips, and community events designed to enhance your riding experience.</p>
+                <h3>Why We Ride</h3>
+                <p>The camaraderie among bikers is unmatched. Sharing stories, experiences, and tips makes every ride memorable.</p>
+            </article>
+        </main>
+    </div>
+
+   
+   
+</body>
+</html>

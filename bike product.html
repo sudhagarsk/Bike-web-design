@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #007acc; /* Blue color */
+    color: #fff;
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Gold color */
+}
+
+/* Hero Section */
+.hero {
+    background: url('./images/pro\(1\).avif') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6em 2em;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    z-index: 2;
+}
+
+.hero .btn {
+    padding: 0.7em 1.5em;
+    background: #ffcc00; /* Gold color */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    z-index: 2;
+}
+
+.hero .btn:hover {
+    background: #e6b800; /* Darker gold */
+    transform: scale(1.05);
+}
+
+/* Products Section */
+#products {
+    padding: 4em 2em;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#products h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: #1a1a1a;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 0 2em;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
+    color: #333;
+}
+
+.product-card p {
+    color: #666;
+    margin: 0.5em 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #007acc; /* Blue color */
+    font-weight: bold;
+}
+
+.product-card .btn {
+    display: block;
+    margin: 1em auto;
+    padding: 0.7em 1.5em;
+    background: #007acc; /* Blue color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.product-card .btn:hover {
+    background: #005fa3; /* Darker blue */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+</style>
+<body>
+    <!-- Header Section -->
+    <!-- <header>
+        <div class="logo">Bike Shop</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore Our Range of Bike Products</h1>
+        <p>Find the best tools and accessories for your biking adventures!</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./images/pro(2.2).jpeg" alt="Bike Helmet">
+                <h3>Bike Helmet</h3>
+                <p>Safety first! Stay protected with our high-quality bike helmets.</p>
+                <span class="price">$499.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="./images/pro(5).jpeg" alt="Bike Lights">
+                <h3>Spare wraps</h3>
+                <p>Illuminate your path with our powerful LED bike lights.</p>
+                <span class="price">$300.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="./images/pro(3).jpeg" alt="Bike Lock">
+                <h3>Bike jockets</h3>
+                <p>Keep your bike secure with our durable locks.</p>
+                <span class="price">$999.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="./images/pro(4).jpeg" alt="Bike Pump">
+                <h3>Bike clows</h3>
+                <p>Always have the right pressure with our reliable bike pumps.</p>
+                <span class="price">$899.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bike Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Club Membership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #d87373;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./images/slide-1\ \(2\).jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    padding: 0.7em 1.5em;
+    background: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #ffaa00;
+}
+
+/* Membership Section */
+#membership {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+#membership h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 2em;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    margin-bottom: 1em;
+}
+
+.card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .btn {
+    padding: 0.5em 1em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .btn:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+</style>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Bike Club</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Join the Ride, Join the Club</h1>
+        <p>Experience the thrill of the road with fellow bike enthusiasts.</p>
+        <a href="#membership" class="btn">Join Now</a>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership">
+        <h2>Membership Tiers</h2>
+        <div class="membership-cards">
+            <div class="card">
+                <h3>Basic</h3>
+                <img src="./images/png-1.jpeg" alt="">
+                <p>Access to monthly group rides and member-only events.</p>
+                <p class="price">$10/month</p>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div class="card">
+                <h3>Premium</h3>
+                <img src="./images/png-2.jpeg" alt="">
+                <p>Includes Basic perks plus discounts on bike gear and workshops.</p>
+                <p class="price">$25/month</p>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div class="card">
+                <h3>VIP</h3>
+                <img src="./images/png-3.jpeg" alt="">
+                <p>All Premium perks plus exclusive VIP events and merchandise.</p>
+                <p class="price">$50/month</p>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bike Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

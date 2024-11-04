@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha Bikes Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1ed3e0;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./images/slide-1\ \(1\).jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 10em 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    padding: 0.7em 1.5em;
+    background: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #cc0000;
+}
+
+/* Models Section */
+#models {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+#models h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #1a1a1a;
+}
+
+.bike-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 2em;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+</style>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Yamaha Bikes Club</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    
+        <!-- <h1>Discover the Thrill of Yamaha Bies</h1>
+        <p>Experience power, performance, and design with Yamaha's legendary lineup.</p> -->
+        <!-- <a href="#models" class="btn">Explore Models</a> -->
+    </section>
+
+    <!-- Models Section -->
+    <section id="models">
+        <h2><i>  Popular Yamaha Models </i></h2>
+        <div class="bike-cards">
+            <div class="card">
+                <img src="./images/r1.(1).jpeg" alt="Yamaha R1">
+                <h3>Yamaha R1</h3>
+                <p>A superbike with exceptional speed and performance.</p>
+            </div>
+            <div class="card">
+                <img src="./images/mt.(2).jpeg" alt="Yamaha MT-09">
+                <h3>Yamaha MT-09</h3>
+                <p>A powerful naked bike with aggressive styling.</p>
+            </div>
+            <div class="card">
+                <img src="./images/slide-1 (2).jpg" alt="Yamaha FZ 25">
+                <h3>Yamaha FZ 25</h3>
+                <p>An agile street fighter designed for the city roads.</p>
+            </div>
+            <div class="card">
+                <img src="./images/png-3.jpeg" alt="Yamaha MT-09">
+                <h3>Yamaha MT-09</h3>
+                <p>A powerful naked bike with aggressive styling.</p>
+            </div>
+            <div class="card">
+                <img src="./images/png-2.jpeg" alt="Yamaha MT-09">
+                <h3>Yamaha MT-15</h3>
+                <p>A powerful naked bike with aggressive styling.</p>
+            </div>
+            <div class="card">
+                <img src="./images/slide-1 (2).jpg" alt="Yamaha MT-09">
+                <h3>Yamaha MT-03</h3>
+                <p>A powerful naked bike with aggressive styling.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Yamaha Bikes Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
